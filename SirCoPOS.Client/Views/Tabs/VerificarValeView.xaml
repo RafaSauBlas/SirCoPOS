@@ -18,13 +18,10 @@
         <BooleanToVisibilityConverter x:Key="bolvis"/>
     </UserControl.Resources>
     <tk:BusyIndicator IsBusy="{Binding IsBusy}">
-        <Grid Margin="0">
+        <Grid Margin="0" Background="{x:Null}">
             <Grid.RowDefinitions>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Grid.Background>
-                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
-            </Grid.Background>
             <TextBlock x:Name="tbk_vale" HorizontalAlignment="Left" Margin="10,13,0,0" TextWrapping="Wrap" Text="Vale" VerticalAlignment="Top"/>
             <TextBox x:Name="txt_buscar" HorizontalAlignment="Left" Height="27" Margin="60,10,0,0" TextWrapping="Wrap" Text="{Binding ValeSearch, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120" KeyboardNavigation.TabIndex ="0">
                 <TextBox.InputBindings>
