@@ -83,9 +83,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\SirCoPOS.Client.dll</HintPath>
     </Reference>
-    <Reference Include="SirCoPOS.Services">
-      <HintPath>..\SirCoPOS.Services\bin\Debug\SirCoPOS.Services.dll</HintPath>
-    </Reference>
     <Reference Include="SirCoPOS.Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\SirCoPOS.Utilities.dll</HintPath>
@@ -685,6 +682,10 @@
     <ProjectReference Include="..\SirCoPOS.Reports\SirCoPOS.Reports.csproj">
       <Project>{a075f0ab-a4e6-497d-b282-081e9cbbcee4}</Project>
       <Name>SirCoPOS.Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SirCoPOS.Services\SirCoPOS.Services.csproj">
+      <Project>{bc1b99e7-2710-4d0c-abf3-ceaa7a51625a}</Project>
+      <Name>SirCoPOS.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

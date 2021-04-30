@@ -153,15 +153,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\dlls\FDx\DotNET\Bin\i386\SecuGen.FDxSDKPro.Windows.dll</HintPath>
     </Reference>
-    <Reference Include="SirCoPOS.BusinessLogic">
-      <HintPath>..\SirCoPOS.BusinessLogic\bin\Debug\SirCoPOS.BusinessLogic.dll</HintPath>
-    </Reference>
     <Reference Include="SirCoPOS.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\SirCoPOS.Client\bin\Debug\SirCoPOS.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="SirCoPOS.DataAccess">
-      <HintPath>..\SirCoPOS.BusinessLogic\bin\Debug\SirCoPOS.DataAccess.dll</HintPath>
     </Reference>
     <Reference Include="SirCoPOS.Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -629,9 +623,17 @@
     <Folder Include="DesignMode\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SirCoPOS.BusinessLogic\SirCoPOS.BusinessLogic.csproj">
+      <Project>{b34987ad-f9ca-40bd-8b45-13e62ea4aaad}</Project>
+      <Name>SirCoPOS.BusinessLogic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SirCoPOS.Common\SirCoPOS.Common.csproj">
       <Project>{e84851fe-a33d-477f-8a55-4233f134446c}</Project>
       <Name>SirCoPOS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SirCoPOS.DataAccess\SirCoPOS.DataAccess.csproj">
+      <Project>{51734512-d5f3-4aa8-ad42-968e67858741}</Project>
+      <Name>SirCoPOS.DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\SirCoPOS.Reports\SirCoPOS.Reports.csproj">
       <Project>{a075f0ab-a4e6-497d-b282-081e9cbbcee4}</Project>

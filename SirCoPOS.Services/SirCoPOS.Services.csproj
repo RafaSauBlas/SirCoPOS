@@ -76,20 +76,12 @@
     <Reference Include="OtpSharp, Version=1.3.0.4, Culture=neutral, PublicKeyToken=1ec2a4a54aeffc1e, processorArchitecture=MSIL">
       <HintPath>..\packages\OtpSharp.1.3.0.4\lib\net40\OtpSharp.dll</HintPath>
     </Reference>
-    <Reference Include="SirCoPOS.BusinessLogic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SirCoPOS.BusinessLogic\bin\Debug\SirCoPOS.BusinessLogic.dll</HintPath>
-    </Reference>
     <Reference Include="SirCoPOS.Client">
       <HintPath>..\SirCoPOS.Client\bin\Debug\SirCoPOS.Client.dll</HintPath>
     </Reference>
     <Reference Include="SirCoPOS.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\SirCoPOS.Server.Common\bin\Debug\SirCoPOS.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="SirCoPOS.DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SirCoPOS.BusinessLogic\bin\Debug\SirCoPOS.DataAccess.dll</HintPath>
     </Reference>
     <Reference Include="SirCoPOS.Server.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -142,6 +134,16 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SirCoPOS.BusinessLogic\SirCoPOS.BusinessLogic.csproj">
+      <Project>{b34987ad-f9ca-40bd-8b45-13e62ea4aaad}</Project>
+      <Name>SirCoPOS.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SirCoPOS.DataAccess\SirCoPOS.DataAccess.csproj">
+      <Project>{51734512-d5f3-4aa8-ad42-968e67858741}</Project>
+      <Name>SirCoPOS.DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
